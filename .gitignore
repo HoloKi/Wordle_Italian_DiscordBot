@@ -1,0 +1,9 @@
+# created by virtualenv automatically
+.env
+data.json
+discord.log
+wordle.log
+Parole.py
+.idea
+venv
+_pycache_

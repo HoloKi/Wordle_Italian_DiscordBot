@@ -140,3 +140,20 @@ EMOJI_CODES = {
     },
 }
 
+
+# @commands.command(name='data')
+    # async def data(self,ctx,punti):
+    #    Data.Aggiorna_punti(ctx.author.id,ctx.author.name,int(punti))
+
+    @commands.command(name='test')
+    async def test(self, ctx):
+        channel = ctx.channel.id
+        await ctx.send("bla bla")
+
+        def check(m):
+            return m.content == 'hello' and m.channel.id == channel
+
+        msg = await client.wait_for('message', check=check, timeout=120)
+        print(check)
+        await ctx.send(f'Hello {msg.author}!')
+

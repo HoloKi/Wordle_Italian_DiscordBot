@@ -81,6 +81,20 @@ def Modifica_punti(user_id, points):
                 print("c'è stato un problema con l'aggiornamento dei punti")
                 return
 
+def sortMethod(e):
+  return e['punti']
+
+def Lista():
+    with open("data.json", "r") as file_json:
+        lista = []
+        data = json.loads(file_json.read())
+        print(data)
+        data['wordle'].sort(key=sortMethod, reverse=True)
+        for i in data['wordle']:
+            lista.append(i)
+            print(i)
+
+        return lista
 
 
 

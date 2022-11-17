@@ -35,7 +35,7 @@ class MyBot(commands.Bot):
         print('Il bot è pronto e funzionante.')
         print(bot.user)
         print('------')
-        for filename in os.listdir('./cogs'):
+        for filename in os.listdir('./cog'):
             if filename.endswith('.py'):
                 await bot.load_extension(f'cogs.{filename[:-3]}')
         await bot.tree.sync(guild=discord.Object(id=383386139333230592))

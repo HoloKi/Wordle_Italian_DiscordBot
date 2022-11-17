@@ -36,6 +36,7 @@ class MyBot(commands.Bot):
         print(bot.user)
         print('------')
         await self.load_extension('cogs.wordle')
+        await bot.tree.sync(guild=discord.Object(id=383386139333230592))
 
 bot = MyBot()
 bot.run(os.getenv('TOKEN'),log_handler=handler)

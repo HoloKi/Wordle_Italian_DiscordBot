@@ -38,3 +38,4 @@ Ritorna un embed con tutta la lista dei giocatori (che hanno in precedenza gioca
 ## ;info
 Ritorna un embed con l'immagine di come giocare a wordle preso dal wordle di Pietroppeter
 
+:)
